@@ -10,14 +10,12 @@ CODE ---> PARSER (read code line by line) ---> CONVERT THEM TO MACHINE CODE --->
                                            |                                 |
                                 Abstract Syntex Tree                    Machine CODE
 
- Steps:
-
+Steps:
 1. Write code
 JS Engine Part:
 2. This code goes in parser. Here it checks syntex error. If it finds syntex error then it throws error. Otherwise, Abstract Syntax Tree (a data structure)  is created from Parser.
 3. In this step, code will convert to machine code, computer/machine will understand the code.
 4. Last step, Code will run.
-
 
 **Execution Context and Execution stack**
 
@@ -70,7 +68,7 @@ Explanation (summery) :
 
  Please check serial for execution sequence
 
- First thing will pop  "Execution Context four"  after finishing the execution from stack, then will pop "Execution Context third", "Execution Context second".
+ First thing will pop "Execution Context four" after finishing the execution from stack, then will pop "Execution Context third", "Execution Context second".
 
 Let's go to a little bit deep of Execution Context: 
 
@@ -84,12 +82,4 @@ When we call a function then it happens two phases:
  Code is scanned for variable declarations: for each variable, a property is created in the variable object, and set to undefined
 
 2. Execution phase: The code of the function that generated the current execution context is ran line by line.
-
-
-
-
-
-
-
-
 
