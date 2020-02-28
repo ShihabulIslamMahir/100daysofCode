@@ -8,22 +8,22 @@ CODE ---> PARSER (read code line by line) ---> CONVERT THEM TO MACHINE CODE --->
                                            |                                 |
                                            |                                 | 
                                            |                                 |
-                                Abstract Syntex Tree                    Machine CODE
+                                Abstract Syntax Tree                    Machine CODE
 
 // Steps:
 
 1. Write code
 //JS Engine Part:
-2. This code goes in parser. Here it checks syntex error. If it finds syntex error then it throws error. Otherwise, Abstract Syntax Tree (a data structure)  is created from Parser.
-3. In this step, code will convert to machine code, computer/machine will understand the code.
+2. This code goes in parser. Here it checks syntax error. If it finds syntax error then it throws an error. Otherwise, Abstract Syntax Tree (a data structure)  is created from Parser.
+3. In this step, code will convert to machine code, the computer/machine will understand the code.
 4. Last step, Code will run.
 
 
 //Execution Context and Execution stack//
 
 //Execution Context:
-//By Default Js executes Global context, It's not like other languages those execute from specific function.
-//Global context of JS is Browser's "window" object. Any global variable declare or assign in window object is same thing.
+//By Default Js executes Global context, It's not like other languages that execute from a specific function.
+//Global context of JS is the Browser's "window" object. Any global variable declares or assigns in the window object is the same thing.
 
 //example:
 
@@ -31,9 +31,9 @@ var x = 5;
 
 window.x;
 
-//output: 10 ( It will show same value)
+//output: 10 ( It will show the same value)
 
-//But if your environment is not a browser then it will change with environment. Example : for node.js, it will be "global" object.
+//But if your environment is not a browser then it will change with the environment. Example: for node.js, it will be "global" object.
 
 //Execution Stack:
 
@@ -70,20 +70,20 @@ first();-------------------------------- 5
 
 // Please check serial for execution sequence
 
-// First thing will pop  "Execution Context four"  after finishing the execution from stack, then will pop "Execution Context third", "Execution Context second".
+// First thing will pop  "Execution Context four"  after finishing the execution from the stack, then will pop "Execution Context third", "Execution Context second".
 
 //Let's go to a little bit deep of Execution Context: 
 
 //When we call a function then it happens two phases: 
 
-//1. Creation Phase: In creation phase, first of all it creates variable object. then it creates scope chain and lastly, determine value of 'this' variable.
+//1. Creation Phase: In the creation phase, first of all, it creates a variable object. then it creates scope chain and lastly, determine the value of 'this' variable.
 
 // *Explanation: 
-// The argument object is created, containing all the arguments that were  passed into the function.
+// The argument object is created, containing all the arguments that were passed into the function.
 // Code is scanned for function declaration: for each function, a property is created in the variable object, pointing to the function
 //Code is scanned for variable declarations: for each variable, a property is created in the variable object, and set to undefined
 
-//2.Execution phase: The code of the function that generated the current execution context is ran line by line.
+//2.Execution phase: The code of the function that generated the current execution context is run line by line.
 
 
 
