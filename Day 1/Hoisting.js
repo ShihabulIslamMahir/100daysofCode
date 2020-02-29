@@ -12,7 +12,7 @@ function calculateAge(yearOfBorn){
 calculateAge(1995);
 //output: 25
 
-// We can also do it the other way around, as hoisting is default behavior of js, so in js functions are hoisted in creation phase, so we can call function before declare it. Aonther thing I can say, as Function call executes in execution phase so we can call function before it declares.
+// We can also do it the other way around, as hoisting is the default behavior of js, so in js functions are hoisted in the creation phase, so we can call a function before declare it. Another thing I can say, as Function call executes in the execution phase so we can call the function before it declares.
 
 calculateAge(1995);
 
@@ -22,7 +22,7 @@ function calculateAge(yearOfBorn){
 
 //output: 25
 
-//But Function expression isn't work like this.We store function in a variable and we set that variable as "undefined" in creation phase. Orginal function executes later so for function expression if we call function before it declares then it will not give value and it will show error and it will say it's not a function, because that moment it's not a function , it's a variable.
+//But Function expression doesn't work like this. We store function in a variable and we set that variable as "undefined" in the creation phase. The original function executes later so for function expression if we call the function before it declares then it will not give value and it will show error and it will say it's not a function because on that moment it's not a function, it's a variable.
 
 //Exapmle 2:
 retirementYear(1995);
@@ -46,7 +46,7 @@ retirementYear(1995);
 //output: 30
 
 
-//In Same way, we can use variable before it's declare but in creation phase variable sets as "undefined" so it will show "undefined" as output
+//In Same way, we can use a variable before it's declared but in creation phase variable sets as "undefined" so it will show "undefined" as output
 
 //Example 3: 
 
@@ -56,11 +56,11 @@ var x = 25;
 
 //output: undefined
 
-// So for value , we need to declare first and then it will need to call
+// So for value, we need to declare first and then it will need to call
 
 var x = 25;
 
 console.log('value:' + x);
 
-//(*** Inportant thing, For best practice we should not call function before it's declare)
+//(*** Important thing, For best practice we should not call a function before it's declared)
 
